@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<title>calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="input">
+				<span id="input"></span>
+            </div>
+            
+			<div class="output">
+				<span id="output"> </span>
+            </div>
+            
+			<br />
+			<br /><br />
+
+			<div class="row">
+				<button class="visible numbers">7</button>
+				<button class="visible numbers">8</button>
+				<button class="visible numbers">9</button>
+				<button onclick="backspace()" id="backspace" class="special">C</button>
+				<button onclick="clearall()" id="clearall" class="special">AC</button>
+			</div>
+
+			<div class="row">
+				<button class="numbers">4</button>
+				<button class="numbers">5</button>
+				<button class="numbers">6</button>
+				<button class="operators">+</button>
+				<button class="operators">-</button>
+			</div>
+
+			<div class="row">
+				<button class=" numbers">1</button>
+				<button class=" numbers">2</button>
+				<button class=" numbers">3</button>
+				<button class=" operators">/</button>
+				<button class=" operators">*</button>
+			</div>
+
+			<div class="row">
+				
+				<button id="dot" class="numbers">.</button>
+				<button class=" numbers "></button>
+				<button class=" numbers">0</button>				 
+				<button class=" operators">%</button>
+				<button onclick ="operation()" id="equals" class="special">=</button>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
